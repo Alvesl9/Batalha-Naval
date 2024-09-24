@@ -1,0 +1,63 @@
+
+body {
+    background-image: url('Imagens/backgroud.png'); /* Imagem de fundo */
+    background-size: cover;
+    opacity: 0.8; /* Transparência do fundo */
+   
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.596);
+    padding: 20px;
+    margin: -10px;
+}
+
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.game-container {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+
+#game-board {
+    top: 50px;
+    position: relative;
+    left: 300px;
+    display: grid;
+    grid-template-columns: repeat(5, 80px); /* Matriz 5x5 */
+    gap: 5px;
+}
+
+.cell {
+    width: 80px; /* Tamanho da imagem */
+    height: 80px;
+    background-image: url('Imagens/Agua.png'); /* Imagem de fundo da agua*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.controls {
+    position: relative;
+    top: 30px;
+    left: 300px;
+    margin: 50px;
+}
+
+button {
+    margin: 10px;
+}
+
+.score {
+    position: relative;
+    top: 100px;
+    color: rgb(255, 255, 255);
+    display: none; /* Ocultar score até o primeiro tiro */
+}
